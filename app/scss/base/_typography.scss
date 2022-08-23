@@ -1,0 +1,20 @@
+@use "../utilities" as u;
+
+body {
+  font-size: u.rem(18);
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

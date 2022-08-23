@@ -1,2 +1,37 @@
-body{background-color:#add8e6}
+html {
+  font-size: 100%;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+a {
+  display: inline-block;
+}
+:root {
+  --Pink: #ff52bf;
+  --Very-Pale-Cyan: #ebfbff;
+  --Very-Dark-Cyan: #00252e;
+  --Grayish-Blue: #808d99;
+  --ff-sans: "Open Sans", sans-serif;
+  --ff-poppins: "Poppins", sans-serif;
+}
+body {
+  font-size: 1.125rem;
+}
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
 /*# sourceMappingURL=style.css.map */
