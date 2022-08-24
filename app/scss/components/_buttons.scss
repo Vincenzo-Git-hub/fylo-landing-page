@@ -1,0 +1,16 @@
+@use "../utilities" as *;
+
+.button {
+  font-weight: 700;
+  background-color: var(--Pink);
+  color: var(--Very-Pale-Cyan);
+  padding: em(16) em(48);
+  border-radius: rem(100);
+}
+
+.navbar__link--button {
+  padding: em(12) em(24);
+  background-color: var(--white);
+  box-shadow: 0px 8px 24px hsla(210, 8%, 62%, 0.2);
+  border-radius: rem(100);
+}

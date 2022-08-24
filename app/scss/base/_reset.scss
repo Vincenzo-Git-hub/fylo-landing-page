@@ -2,6 +2,10 @@ html {
   font-size: 100%;
 }
 
+body {
+  margin: 0;
+}
+
 *,
 *::before,
 *::after {
@@ -15,4 +19,10 @@ img {
 
 a {
   display: inline-block;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }

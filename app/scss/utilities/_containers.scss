@@ -1,0 +1,11 @@
+@use "functions" as *;
+
+.container {
+  width: min(90%, rem(1440));
+  margin-inline: auto;
+
+  &--large {
+    width: min(80%, rem(1240));
+    margin-inline: auto;
+  }
+}

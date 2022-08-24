@@ -1,0 +1,12 @@
+@use "../utilities" as *;
+
+.card {
+  padding: em(32);
+  background-color: var(--white);
+  box-shadow: 0px 8px 24px hsla(210, 8%, 62%, 0.2);
+  border-radius: rem(10);
+}
+
+.card + .card {
+  margin-top: rem(48);
+}

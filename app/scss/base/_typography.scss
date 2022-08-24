@@ -1,13 +1,17 @@
-@use "../utilities" as u;
+@use "../utilities" as *;
 
 body {
-  font-size: u.rem(18);
+  font-family: var(--ff-sans);
+  font-weight: 400;
+  font-size: rem(18);
+  text-align: center;
 }
 
 h1,
 h2,
 h3 {
   margin-bottom: 0;
+  font-family: var(--ff-poppins);
 }
 
 p {

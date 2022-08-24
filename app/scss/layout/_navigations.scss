@@ -1,0 +1,9 @@
+@use "../utilities" as *;
+
+.navbar {
+  padding-block: rem(32);
+}
+
+.navbar__image {
+  width: rem(200);
+}
