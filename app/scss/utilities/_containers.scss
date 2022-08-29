@@ -4,8 +4,16 @@
   width: min(90%, rem(1440));
   margin-inline: auto;
 
+  &--narrow {
+    @media (max-width: em(699.98)) {
+      width: min(80%, rem(1440));
+    }
+    width: min(90%, rem(1440));
+    margin-inline: auto;
+  }
+
   &--large {
-    width: min(80%, rem(1240));
+    width: min(90%, rem(1240));
     margin-inline: auto;
   }
 }

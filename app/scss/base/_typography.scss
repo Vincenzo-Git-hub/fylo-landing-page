@@ -1,24 +1,80 @@
 @use "../utilities" as *;
 
+//General typography
 body {
   font-family: var(--ff-sans);
   font-weight: 400;
-  font-size: rem(18);
-  text-align: center;
+  @media (max-width: em(699.98)) {
+    text-align: center;
+  }
 }
 
 h1,
 h2,
 h3 {
-  margin-bottom: 0;
+  margin-top: 0;
   font-family: var(--ff-poppins);
 }
 
 p {
-  margin-bottom: 0;
+  margin-top: 0;
+  line-height: 1.5;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+//navigation and header typography
+.navbar__link--button {
+  font-weight: 600;
+  color: hsl(0, 0%, 10%);
+  font-size: rem(14);
+  @media (max-width: em(699.98)) {
+    font-size: rem(12);
+  }
+}
+
+.hero__title {
+  @media (min-width: em(700)) {
+    font-size: rem(32);
+  }
+  @media (min-width: em(900)) {
+    font-size: rem(40);
+  }
+}
+//to wrap the title
+.narrower {
+  width: min(90%, rem(500));
+}
+
+//button typography
+.button {
+  font-weight: 700;
+  color: var(--Very-Pale-Cyan);
+
+  &--small {
+    font-size: rem(13);
+  }
+
+  &--small,
+  &--big {
+    @media (max-width: em(699.98)) {
+      font-size: rem(12);
+    }
+  }
+}
+
+//card typography
+.card {
+  &__title {
+    @media (max-width: em(699.98)) {
+      font-size: rem(20);
+    }
+  }
+
+  &__text {
+    color: var(--Grayish-Blue);
+  }
 }

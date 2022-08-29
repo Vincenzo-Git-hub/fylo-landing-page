@@ -3,5 +3,57 @@
 .header {
   background-color: var(--Very-Pale-Cyan);
   background-image: url("../../../images/bg-hero-mobile.svg");
-  padding-bottom: em(64);
+  @media (min-width: em(700)) {
+    background-image: url("../../../images/bg-hero-desktop.svg");
+  }
+  padding-bottom: em(48);
+}
+
+.hero {
+  &__body {
+    margin-bottom: em(32);
+    @media (min-width: em(700)) {
+      max-width: 40%;
+    }
+    animation: text 1s ease-out;
+  }
+
+  &__image {
+    animation: image 1s ease-out;
+    @media (min-width: em(700)) {
+      max-width: 55%;
+    }
+  }
+
+  &__text {
+    margin-bottom: em(36);
+  }
+
+  &__button {
+    @media (max-width: em(699.98)) {
+      margin-bottom: em(32);
+    }
+  }
+}
+
+@keyframes text {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes image {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

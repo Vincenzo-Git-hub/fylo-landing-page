@@ -14,14 +14,13 @@
     rel="stylesheet">
   <link rel="stylesheet" href="dist/style.css">
   <script src="app/js/script.js" defer></script>
-  <script src="https://kit.fontawesome.com/f7190ef78a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
   <header class="header">
     <nav class="navbar">
-      <div class="container navbar__flex">
+      <div class="container flex__navbar">
         <a href="#" class="navbar__logo">
           <img src="images/logo.svg" alt="logo" class="navbar__image">
         </a>
@@ -32,12 +31,13 @@
     </nav>
 
     <article class="hero">
-      <div class="container flex">
+      <div class="container--narrow flex">
         <div class="hero__body">
-          <h1>Build The Community Your Fans Will Love</h1>
-          <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
+          <h1 class="hero__title narrower">Build The Community Your Fans Will Love</h1>
+          <p class="hero__text">Huddle re-imagines the way we build communities. You have a voice, but so does your
+            audience.
             Create connections with your users as you engage in genuine discussion.</p>
-          <a href="#" class="button button--small">Get Started For Free</a>
+          <a href="#" class="hero__button button button--small">Get Started For Free</a>
         </div>
         <div class="hero__image">
           <img src="images/illustration-mockups.svg" alt="illustraitions mockups">
@@ -48,38 +48,38 @@
 
   <main class="main">
     <div class="container--large">
-      <article class="card">
+      <article class="card flex--reverse reveal">
         <div class="card__image">
           <img src="images/illustration-grow-together.svg" alt="illustraitions grow together">
         </div>
         <div class="card__body">
-          <h2>Grow Together</h2>
-          <p>Generate meaningful discussions with your audience and build a strong, loyal community.
+          <h2 class="card__title">Grow Together</h2>
+          <p class="card__text">Generate meaningful discussions with your audience and build a strong, loyal community.
             Think of the insightful conversations you miss out on with a feedback form.</p>
         </div>
       </article>
-      <article class="card">
+      <article class="card flex reveal">
         <div class="card__image">
           <img src="images/illustration-flowing-conversation.svg" alt="illustraitions conversation">
         </div>
-        <div class="card__body">
-          <h2>Following Conversations</h2>
-          <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads
+        <div class="card__body card__body--space">
+          <h2 class="card__title">Following Conversations</h2>
+          <p class="card__text">You wouldn't paginate a conversation in real life, so why do it online? Our threads
             have just-in-time loading for a more natural flow.</p>
         </div>
       </article>
-      <article class="card">
+      <article class="card flex--reverse reveal">
         <div class="card__image">
           <img src="images/illustration-your-users.svg" alt="illustraitions users">
         </div>
         <div class="card__body">
-          <h2>Your Users</h2>
-          <p>It takes no time at all to integrate Huddle with your app's authentication solution.
+          <h2 class="card__title">Your Users</h2>
+          <p class="card__text">It takes no time at all to integrate Huddle with your app's authentication solution.
             This means, once signed in to your app, your users can start chatting immediately.</p>
         </div>
       </article>
-      <article class="card card--small">
-        <h2>Ready To Build Your Community?</h2>
+      <article class="card card--small reveal">
+        <h2 class="card__title">Ready To Build Your Community?</h2>
         <a href="#" class="button button--big">Get Started For Free</a>
       </article>
     </div>
@@ -87,33 +87,28 @@
 
   <footer class="footer">
     <div class="container--large">
-      <a href="#">
+      <a href="#" class="footer__logo">
         <img src="images/logo.svg" alt="logo">
       </a>
-      <div class="wrapper">
+      <div class="flex__footer">
         <div class="col">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          <p class="footer__location">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua</p>
-          <p>+1-543-123-4567</p>
-          <p>example@huddle.com</p>
+          <p class="footer__phone">+1-543-123-4567</p>
+          <p class="footer__email">example@huddle.com</p>
         </div>
         <nav class="navigation--secondary flex">
           <div class="col">
-            <a href="#">About Us</a><br>
-            <a href="#">What We Do</a><br>
-            <a href="#">FAQ</a>
+            <a href="#" class="footer__link">About Us</a><br>
+            <a href="#" class="footer__link">What We Do</a><br>
+            <a href="#" class="footer__link">FAQ</a>
           </div>
           <div class="col">
-            <a href="#">Career</a><br>
-            <a href="#">Blog</a><br>
-            <a href="#">Contact Us</a>
+            <a href="#" class="footer__link">Career</a><br>
+            <a href="#" class="footer__link">Blog</a><br>
+            <a href="#" class="footer__link">Contact Us</a>
           </div>
         </nav>
-        <div class="col flex">
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-twitter"></i>
-        </div>
       </div>
     </div>
   </footer>

@@ -1,7 +1,62 @@
 @use "../utilities" as *;
 
 .footer {
-  padding-block: em(48);
+  padding-block: em(132) em(48);
   background-color: var(--Very-Dark-Cyan);
   color: var(--Very-Pale-Cyan);
+  text-align: left;
+
+  &__logo {
+    margin-bottom: 2rem;
+    mix-blend-mode: multiply;
+  }
+
+  &__phone::before {
+    content: url("../../../images/icon-phone.svg");
+  }
+
+  &__email::before {
+    content: url("../../../images/icon-email.svg");
+  }
+
+  &__location::before {
+    content: url("../../../images/icon-location.svg");
+  }
+
+  &__location {
+    max-width: rem(500);
+  }
+
+  &__email {
+    @media (max-width: em(899.98)) {
+      margin-bottom: rem(48);
+    }
+  }
+
+  &__phone,
+  &__email,
+  &__location {
+    display: flex;
+    gap: rem(16);
+  }
+
+  &__link ~ &__link {
+    margin-top: rem(16);
+  }
+
+  //to create the space between the nav link
+  &__link:nth-of-type(3) {
+    @media (max-width: em(699.98)) {
+      margin-bottom: rem(16);
+    }
+  }
+
+  &__link {
+    transition: all 0.3s ease-out;
+  }
+
+  &__link:hover {
+    transform: scale(1.1, 1.1);
+    text-decoration: underline;
+  }
 }

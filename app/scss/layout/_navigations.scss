@@ -2,8 +2,24 @@
 
 .navbar {
   padding-block: rem(32);
+  @media (max-width: em(699.98)) {
+    margin-bottom: em(48);
+  }
+
+  &__logo {
+    animation: logo 1s ease-in-out;
+  }
+
+  &__image {
+    width: rem(100);
+    @media (min-width: em(700)) {
+      width: rem(200);
+    }
+  }
 }
 
-.navbar__image {
-  width: rem(200);
+@keyframes logo {
+  100% {
+    transform: rotate(3turn);
+  }
 }
