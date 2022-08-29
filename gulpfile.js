@@ -41,10 +41,18 @@ function watchTask(){
   watch(['app/scss/**/*.scss', 'app/js/**/*.js'], series(scssTask, jsTask, browsersyncReload));
 }
 
+//build task
+function build(cb) {
+  cb();
+}
+
+exports.build = build;
+
 // Default Gulp task
 exports.default = series(
   scssTask,
   jsTask,
   browsersyncServe,
-  watchTask
+  watchTask,
+  build
 );
